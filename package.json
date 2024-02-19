@@ -4,8 +4,10 @@
     "description": "this package is YouTube download API",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon index.ts",
-        "ts-node": "ts-node index.ts"
+        "start": "ts-node src/index.ts",
+        "build": "rimraf dist && tsc",
+        "deploy": "npm run build && vercel --prod",
+        "dev": "nodenom src/index.ts"
     },
     "author": "",
     "license": "ISC",
