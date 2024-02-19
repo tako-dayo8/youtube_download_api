@@ -1,0 +1,22 @@
+{
+    "name": "youtube_download_api",
+    "version": "0.0.1",
+    "description": "this package is YouTube download API",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.ts",
+        "ts-node": "ts-node index.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "nodemon": "^3.0.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "ytdl-core": "^4.11.5"
+    }
+}
