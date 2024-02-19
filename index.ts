@@ -72,6 +72,10 @@ app.post('/youtube_download', async (req: any, res: any): Promise<void> => {
     return;
 });
 
+app.get('/', (req: any, res: any): void => {
+    res.send('Hello World');
+});
+
 app.listen(port, (): void => {
     console.log(`Server is running at http://localhost:${port}`);
 });
