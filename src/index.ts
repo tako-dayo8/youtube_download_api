@@ -3,8 +3,7 @@ import fs from 'fs';
 const express = require('express');
 import path from 'path';
 
-const port: number = process.env.PORT == undefined ? 4000 : Number(process.env.PORT);
-
+const port: number = 4000; //ポート番号
 //初期化
 const app = express();
 
@@ -126,8 +125,8 @@ app.use('/videos', (req: any, res: any, next: any) => {
 });
 
 //保存先url
-const audio_url = `http://api.mcakh-studio.site/audios/`;
-const video_url = `http://api.mcakh-studio.site/videos/`;
+const audio_url = `https://api.mcakh-studio.site/audios/`;
+const video_url = `https://api.mcakh-studio.site/videos/`;
 
 app.post('/', async (req: any, res: any) => {
     console.log('-----------------POST-----------------');
