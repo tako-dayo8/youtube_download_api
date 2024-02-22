@@ -126,8 +126,8 @@ app.use('/videos', (req: any, res: any, next: any) => {
 });
 
 //保存先url
-const audio_url = `http://160.251.182.118:${port}/audios/`;
-const video_url = `http://160.251.182.118:${port}/videos/`;
+const audio_url = `http://api.mcakh-studio.site/audios/`;
+const video_url = `http://api.mcakh-studio.site/videos/`;
 
 app.post('/', async (req: any, res: any) => {
     console.log('-----------------POST-----------------');
