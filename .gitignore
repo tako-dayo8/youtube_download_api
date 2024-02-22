@@ -1,1 +1,8 @@
 node_modules/
+videos/
+audios/
+videos_audios/
+logs/
+
+*.env
+*.env.development
