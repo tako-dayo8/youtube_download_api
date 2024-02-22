@@ -1,13 +1,12 @@
 {
     "name": "youtube_download_api",
-    "version": "0.0.1",
+    "version": "1.0.0-beta",
     "description": "this package is YouTube download API",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "start": "ts-node src/index.ts",
         "build": "rimraf dist && tsc",
-        "deploy": "npm run build && vercel --prod",
-        "dev": "nodenom src/index.ts"
+        "dev": "nodemon src/index.ts"
     },
     "author": "",
     "license": "ISC",
