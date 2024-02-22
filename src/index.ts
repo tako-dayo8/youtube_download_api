@@ -251,8 +251,8 @@ app.get('/', (req: any, res: any) => {
 
 //httpsの設定
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/api.mcakh-studio.site/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/api.mcakh-studio.site/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/mcakh-studio.site/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/mcakh-studio.site/fullchain.pem'),
 };
 
 //httpsでリクエスト待機
