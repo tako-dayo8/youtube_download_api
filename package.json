@@ -6,7 +6,8 @@
     "scripts": {
         "start": "ts-node src/index.ts",
         "build": "rimraf dist && tsc",
-        "dev": "nodemon src/index.ts"
+        "dev": "nodemon src/index.ts",
+        "rmove": "ts-node src/fileremove.ts"
     },
     "author": "",
     "license": "ISC",
