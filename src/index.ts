@@ -37,6 +37,8 @@ app.use('/audios', (req: any, res: any, next: any) => {
     const url: string = req.url;
     const file_name = url.replace('/', '');
 
+    console.log('reqest url : ' + url);
+
     //フォルダがない場合404を返す
     if (!fs.existsSync(`./audios`)) {
         res.status(404).json({ status: 404, error: 'No Directory found' });
