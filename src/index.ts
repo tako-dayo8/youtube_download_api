@@ -39,6 +39,14 @@ app.use('/audios', (req: any, res: any, next: any) => {
 
     console.log('reqest url : ' + url);
 
+    if (url == '/') {
+        res.status(404).json({ status: 404, error: 'No file found' });
+        append_GET_Log(ip, date_log, 404, 'No file found', url);
+        console.error('status : 404 No file found');
+        console.log('-------------------------------------');
+        return;
+    }
+
     //フォルダがない場合404を返す
     if (!fs.existsSync(`./audios`)) {
         res.status(404).json({ status: 404, error: 'No Directory found' });
