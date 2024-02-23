@@ -248,6 +248,10 @@ app.get('/', (req: any, res: any) => {
     console.log('-------------------------------------');
 });
 
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
+
 function removeFile(id: string): void {
     fs.readdirSync('./videos').forEach((file) => {
         if (file.includes(id)) {
