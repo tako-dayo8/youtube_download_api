@@ -39,9 +39,9 @@ app.use('/audios', (req: any, res: any, next: any) => {
 
     //フォルダがない場合404を返す
     if (!fs.existsSync(`./audios`)) {
-        res.status(404).json({ status: 404, error: 'Not Found' });
-        append_GET_Log(ip, date_log, 404, 'Not Found', url);
-        console.error('status : 404 Not Found');
+        res.status(404).json({ status: 404, error: 'No Directory found' });
+        append_GET_Log(ip, date_log, 404, 'No Directory found', url);
+        console.error('status : 404 No Directory found');
         console.log('-------------------------------------');
         return;
     }
@@ -52,9 +52,9 @@ app.use('/audios', (req: any, res: any, next: any) => {
 
     //ファイルが存在しない場合404を返す
     if (resalt.length == 0) {
-        res.status(404).json({ status: 404, error: 'Not Found' });
-        append_GET_Log(ip, date_log, 404, 'Not Found', url);
-        console.error('status : 404 Not Found');
+        res.status(404).json({ status: 404, error: 'No file found' });
+        append_GET_Log(ip, date_log, 404, 'No file found', url);
+        console.error('status : 404 No file found');
         console.log('-------------------------------------');
         return;
     }
@@ -96,9 +96,9 @@ app.use('/videos', (req: any, res: any, next: any) => {
 
     //フォルダがない場合404を返す
     if (!fs.existsSync(`./videos`)) {
-        res.status(404).json({ status: 404, error: 'Not Found' });
-        append_GET_Log(ip, date_log, 404, 'Not Found', url);
-        console.error('status : 404 Not Found');
+        res.status(404).json({ status: 404, error: 'No Directory found' });
+        append_GET_Log(ip, date_log, 404, 'No Directory found', url);
+        console.error('status : 404 No Directory found');
         console.log('-------------------------------------');
         return;
     }
@@ -109,9 +109,9 @@ app.use('/videos', (req: any, res: any, next: any) => {
 
     //ファイルが存在しない場合404を返す
     if (resalt.length == 0) {
-        res.status(404).json({ status: 404, error: 'Not Found' });
-        append_GET_Log(ip, date_log, 404, 'Not Found', url);
-        console.error('status : 404 Not Found');
+        res.status(404).json({ status: 404, error: 'No file found' });
+        append_GET_Log(ip, date_log, 404, 'No file found', url);
+        console.error('status : 404 No file found');
         console.log('-------------------------------------');
         return;
     }
