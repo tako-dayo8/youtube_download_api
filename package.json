@@ -5,7 +5,6 @@
     "main": "src/index.js",
     "scripts": {
         "start": "ts-node src/index.ts",
-        "build": "rimraf dist && tsc",
         "dev": "nodemon src/index.ts",
         "remove": "ts-node src/fileremove.ts"
     },
