@@ -10,7 +10,7 @@ http リクエストを送ると、動画を取得できる URL を返します�
 
 ## リクエスト
 
-"https://api.mcakh-studio.site"にPOSTリクエストを送信します。
+"https://api.mcakh-studio.site"　に POST リクエストを送信します。
 
 ### パラメータ
 
