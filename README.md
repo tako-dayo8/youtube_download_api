@@ -41,11 +41,10 @@ const result = await res.json();
     "title": "動画のタイトル : string",
     "url": {
         "audio": "音声のダウンロードURL : string",
-        "video": "動画のダウンロードURL : string",
+        "video": "動画のダウンロードURL : string"
     },
-    "date": "リクエスト日時 : string",
-};
-
+    "date": "リクエスト日時 : string"
+}
 ```
 
 ## 返り値 (失敗)
